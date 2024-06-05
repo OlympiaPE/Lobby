@@ -2,11 +2,12 @@
 
 namespace Lobby\managers;
 
+use Lobby\Loader;
+use Lobby\managers\types\CommandManager;
 use Lobby\managers\types\ItemsManager;
 use Lobby\managers\types\ListenerManager;
-use Lobby\Loader;
 use Lobby\managers\types\PermissionManager;
-use Lobby\managers\types\CommandManager;
+use Lobby\managers\types\ServersManager;
 use pocketmine\utils\RegistryTrait;
 use ReflectionClass;
 
@@ -15,6 +16,7 @@ use ReflectionClass;
  * @method static CommandManager COMMAND()
  * @method static ListenerManager LISTENER()
  * @method static ItemsManager ITEMS()
+ * @method static ServersManager SERVERS()
  */
 class Managers
 {
