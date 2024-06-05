@@ -1,0 +1,7 @@
+name: Lobby
+main: Lobby\Loader
+api: 5.0.0 # Lastest version
+version: 1.0.0
+authors:
+ - OlympiaPE
+ - Zwuiix
