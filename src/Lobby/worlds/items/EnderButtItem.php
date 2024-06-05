@@ -55,7 +55,7 @@ class EnderButtItem extends Item
         $player->getNetworkProperties()->setGenericFlag(EntityMetadataFlags::WASD_CONTROLLED, true);
         $entity->getNetworkProperties()->setGenericFlag(EntityMetadataFlags::SADDLED, true);
 
-        $player->getNetworkProperties()->setVector3(EntityMetadataProperties::RIDER_SEAT_POSITION, new Vector3(0, 1.5, 0), true);
+        $player->getNetworkProperties()->setVector3(EntityMetadataProperties::RIDER_SEAT_POSITION, new Vector3(0, 1.3, 0), true);
 
         $data = new EntityLink($entity->getId(), $player->getId(), EntityLink::TYPE_RIDER, true, true);
         $pk = SetActorLinkPacket::create($data);
