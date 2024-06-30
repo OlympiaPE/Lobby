@@ -3,6 +3,7 @@
 namespace Lobby\worlds\items;
 
 use Lobby\utils\constants\GlobalConstants;
+use Lobby\utils\forms\GameForm;
 use pocketmine\item\Item;
 use pocketmine\item\ItemIdentifier;
 use pocketmine\item\ItemTypeIds;
@@ -30,7 +31,7 @@ class GameItem extends Item
      */
     public function onClickAir(Player $player, Vector3 $directionVector, array &$returnedItems): ItemUseResult
     {
-        //NavigationForm::getInstance()->send($player);
+        GameForm::getInstance()->send($player);
         return ItemUseResult::NONE;
     }
 }
