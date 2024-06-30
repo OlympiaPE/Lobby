@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Lobby\libraries\muqsit\invmenu;
 
+use InvalidArgumentException;
 use Lobby\libraries\muqsit\invmenu\session\PlayerManager;
 use Lobby\libraries\muqsit\invmenu\type\InvMenuTypeRegistry;
-use InvalidArgumentException;
 use LogicException;
 use pocketmine\plugin\Plugin;
 use pocketmine\Server;

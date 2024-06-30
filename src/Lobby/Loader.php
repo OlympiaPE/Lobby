@@ -6,6 +6,8 @@ use Lobby\handlers\Handlers;
 use Lobby\libraries\CortexPE\Commando\exception\HookAlreadyRegistered;
 use Lobby\libraries\CortexPE\Commando\PacketHooker;
 use Lobby\libraries\muqsit\invmenu\InvMenuHandler;
+use Lobby\libraries\slq\Hikabrain\data\DataBase;
+use Lobby\libraries\slq\Hikabrain\trait\InitComponent;
 use Lobby\managers\Managers;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\SingletonTrait;
@@ -29,12 +31,8 @@ class Loader extends PluginBase
     protected function onEnable(): void
     {
         // Registering libraries
-        if(!PacketHooker::isRegistered()) {
-            PacketHooker::register($this);
-        }
-        if(!InvMenuHandler::isRegistered()) {
-            InvMenuHandler::register($this);
-        }
+        PacketHooker::register($this);
+        InvMenuHandler::register($this);
 
         Managers::load();
         Handlers::load();

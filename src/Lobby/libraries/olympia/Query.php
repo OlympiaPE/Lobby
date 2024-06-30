@@ -4,7 +4,6 @@ namespace Lobby\libraries\olympia;
 
 use Lobby\libraries\olympia\tasks\QueryAsyncRequestTask;
 use pocketmine\Server;
-use pocketmine\thread\NonThreadSafeValue;
 
 class Query
 {

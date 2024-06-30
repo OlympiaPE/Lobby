@@ -7,7 +7,6 @@ use pocketmine\item\Item;
 use pocketmine\nbt\NBT;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\ListTag;
-use pocketmine\player\Player;
 use pocketmine\Server;
 
 class OfflineUtil

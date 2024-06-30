@@ -2,11 +2,9 @@
 
 namespace Lobby\managers\types;
 
+use Lobby\commands\SpawnCommand;
 use Lobby\Loader;
 use Lobby\managers\Manager;
-use Lobby\utils\FileUtil;
-use pocketmine\command\Command;
-use Symfony\Component\Filesystem\Path;
 
 class CommandManager extends Manager
 {
@@ -15,11 +13,6 @@ class CommandManager extends Manager
      */
     public function onLoad(): void
     {
-        FileUtil::callDirectory(Path::join("commands"), function(string $name): void {
-            $command = new $name();
-            if ($command instanceof Command) {
-                Loader::getInstance()->getServer()->getCommandMap()->register($command->getName(), $command);
-            }
-        });
+        Loader::getInstance()->getServer()->getCommandMap()->register("spawn", new SpawnCommand(Loader::getInstance(), "spawn", "Se téléporté au spawn!"));
     }
 }

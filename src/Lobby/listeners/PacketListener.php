@@ -2,7 +2,6 @@
 
 namespace Lobby\listeners;
 
-use Lobby\entities\Session;
 use Lobby\events\PlayerLeaveVehicleEvent;
 use Lobby\libraries\SenseiTarzan\ExtraEvent\Class\EventAttribute;
 use pocketmine\entity\Entity;

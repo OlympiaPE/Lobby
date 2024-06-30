@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Lobby\libraries\muqsit\invmenu\session\network;
 
 use Closure;
+use InvalidArgumentException;
 use Lobby\libraries\muqsit\invmenu\session\InvMenuInfo;
 use Lobby\libraries\muqsit\invmenu\session\network\handler\PlayerNetworkHandler;
 use Lobby\libraries\muqsit\invmenu\session\PlayerSession;
-use InvalidArgumentException;
 use pocketmine\block\inventory\BlockInventory;
 use pocketmine\inventory\Inventory;
 use pocketmine\network\mcpe\NetworkSession;

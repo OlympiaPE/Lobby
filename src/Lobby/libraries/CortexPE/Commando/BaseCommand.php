@@ -29,11 +29,11 @@ declare(strict_types=1);
 
 namespace Lobby\libraries\CortexPE\Commando;
 
+use InvalidArgumentException;
 use Lobby\libraries\CortexPE\Commando\constraint\BaseConstraint;
 use Lobby\libraries\CortexPE\Commando\exception\InvalidErrorCode;
 use Lobby\libraries\CortexPE\Commando\traits\ArgumentableTrait;
 use Lobby\libraries\CortexPE\Commando\traits\IArgumentable;
-use InvalidArgumentException;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\lang\Translatable;

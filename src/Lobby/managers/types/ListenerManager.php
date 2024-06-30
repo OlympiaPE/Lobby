@@ -7,8 +7,6 @@ use Lobby\listeners\PacketListener;
 use Lobby\listeners\SessionListener;
 use Lobby\Loader;
 use Lobby\managers\Manager;
-use Lobby\utils\FileUtil;
-use Symfony\Component\Filesystem\Path;
 
 class ListenerManager extends Manager
 {

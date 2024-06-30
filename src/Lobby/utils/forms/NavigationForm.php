@@ -28,7 +28,7 @@ class NavigationForm
         $form->setTitle("Navigation");
         $form->setContent("Veuillez séléctionner un serveur:");
         foreach (Managers::SERVERS()->getServers() as $serverInfo) {
-            $form->addButton($serverInfo->getName() . PHP_EOL . $serverInfo->getPlayers() . " joueurs", $serverInfo->hasPath() ? 0 : -1, $serverInfo->getPath(), $serverInfo->getName());
+            $form->addButton($serverInfo->getName() . "\n" . $serverInfo->getPlayers() . " joueurs", $serverInfo->hasPath() ? 0 : -1, $serverInfo->getPath(), $serverInfo->getName());
         }
         $player->sendForm($form);
     }

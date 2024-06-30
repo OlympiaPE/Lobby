@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Lobby\libraries\muqsit\simplepackethandler;
 
+use InvalidArgumentException;
 use Lobby\libraries\muqsit\simplepackethandler\interceptor\IPacketInterceptor;
 use Lobby\libraries\muqsit\simplepackethandler\interceptor\PacketInterceptor;
 use Lobby\libraries\muqsit\simplepackethandler\monitor\IPacketMonitor;
 use Lobby\libraries\muqsit\simplepackethandler\monitor\PacketMonitor;
-use InvalidArgumentException;
 use pocketmine\event\EventPriority;
 use pocketmine\plugin\Plugin;
 

@@ -7,7 +7,6 @@ use Lobby\libraries\jasonw4331\libpmquery\PmQueryException;
 use Lobby\managers\Managers;
 use Lobby\managers\types\servers\ServerInfo;
 use pocketmine\scheduler\AsyncTask;
-use pocketmine\thread\NonThreadSafeValue;
 
 class QueryAsyncRequestTask extends AsyncTask
 {

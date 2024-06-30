@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Lobby\libraries\muqsit\invmenu\type\graphic\network;
 
+use InvalidArgumentException;
 use Lobby\libraries\muqsit\invmenu\session\InvMenuInfo;
 use Lobby\libraries\muqsit\invmenu\session\PlayerSession;
 use Lobby\libraries\muqsit\invmenu\type\graphic\PositionedInvMenuGraphic;
-use InvalidArgumentException;
 use pocketmine\network\mcpe\protocol\ContainerOpenPacket;
 use pocketmine\network\mcpe\protocol\types\BlockPosition;
 
