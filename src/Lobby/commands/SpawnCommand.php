@@ -6,7 +6,6 @@ use Lobby\entities\Session;
 use Lobby\libraries\CortexPE\Commando\BaseCommand;
 use pocketmine\command\CommandSender;
 use pocketmine\permission\DefaultPermissions;
-use pocketmine\utils\TextFormat;
 
 class SpawnCommand extends BaseCommand
 {
